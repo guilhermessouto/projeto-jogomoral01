@@ -1,39 +1,134 @@
-*{margin: 10px;
+*{margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     color: black;}
 
-#a{font-size: 3em;}
+:root{--azul: rgb(0, 89, 255);
+    --roxo: #2937f0;
+    --roxoForte: #6610f2;
+    --roxoFraco: #9f1ae2;
+    --laranja: #f4623a;
+    --cinza: #6c757d;
+    --cinzaEscuro: #343a40;}
 
-body{background-color: gray;
+
+body{background-color: var(--cinzaEscuro);
     margin: 0;}
 
 button{font-size: 3em;
-    padding: 5px 20px;
     cursor: pointer;}
 
 
+#a{display: none;}
 
-#timer-01{font-size: 3em;
+
+#começar{margin: auto;
+    margin-top: 50px;
+    padding: 10px 50px;
+    display: block;
+    background-image: linear-gradient(var(--azul), var(--roxo));
+    color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 0 4px black;}
+
+
+
+
+
+.timer-01-css{width: 50%;
+    margin: auto;
+    margin-top: 50px;}
+
+#timer-01{color: white;
+    background-image: linear-gradient(var(--azul), var(--roxo));
+    text-align: center;
+    font-size: 3em;
     background-color: blueviolet;
-    display: inline;
-    margin-left: 0;}/*timer regressivo*/
+    margin-left: 0;
+    border-radius: 50px;
+    box-shadow: 0px 0 4px black;}/*timer regressivo*/
 
-#timer-02{font-size: 3em;
+#timer-01 strong{color: var(--laranja);
+    font-size: 1.2em;}
+
+
+
+
+
+
+
+#resposta{width: 50%;
+    margin: auto;
+    text-align: center;}/*box da bolinha*/
+
+#contador{width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--laranja);
+    box-shadow: 0px 0 4px black;}/*bolinha pra clicar*/
+ 
+
+
+
+
+#numCliques{width: 50%;
+    margin: auto;
+    margin-top: 50px ;
+    color: white;
+    background-image: linear-gradient(var(--azul), var(--roxo));
+    text-align: center;
+    font-size: 2em;
     background-color: blueviolet;
-    display: inline;
-    margin-left: 0;}/*timer dos cliques*/
+    border-radius: 50px;
+    box-shadow: 0px 0 4px black;}/*texto dos cliques*/
 
-.clique{font-size: 3em;
-    margin: 0;
-    margin-right: 25px;}/*texto dos cliques*/
+#numCliques strong{color: var(--laranja);
+    font-size: 1.2em;}
 
 
-.resultado{font-size: 3em;
-    display: inline;
-    margin: 0;}/*config geral do resultado*/
 
-#ganhou{background-color: rgb(9, 223, 9);}
 
-#perdeu{background-color: red;}
+
+#timer-02{width: 50%;
+    margin: auto;
+    margin-top: 10px ;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    background-color: var(--azul);
+    border-radius: 50px;
+    box-shadow: 0px 0 4px black;}/*timer dos cliques*/
+
+
+
+
+
+.resultado{width: 50%;
+    margin: auto;
+    font-size: 2.5em;
+    text-align: center;
+    border-radius: 10px;}/*config geral do resultado*/
+
+#ganhou{background-color: rgb(9, 223, 9);
+    margin: auto;}
+
+#perdeu{background-color: rgb(235, 10, 10);
+    margin: auto;}
+
+
+
+
+
+#recomeçar02{margin: auto;
+    margin-top: 30px;
+    padding: 10px 50px;
+    display: block;
+    background-image: linear-gradient(var(--azul), var(--roxo));
+    color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 0 4px black;}

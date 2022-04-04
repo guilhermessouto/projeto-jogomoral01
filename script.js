@@ -1,7 +1,7 @@
 alert('Clicar 3 vezes em menos de 5 segundos')
 
 let contador = 0
-let ss01 = 1
+let ss01 = 4
 let ss02 = 0
 
 let cronometro01

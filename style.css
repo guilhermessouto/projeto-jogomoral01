@@ -1,0 +1,39 @@
+*{margin: 10px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;}
+
+#a{font-size: 3em;}
+
+body{background-color: gray;
+    margin: 0;}
+
+button{font-size: 3em;
+    padding: 5px 20px;
+    cursor: pointer;}
+
+
+
+#timer-01{font-size: 3em;
+    background-color: blueviolet;
+    display: inline;
+    margin-left: 0;}/*timer regressivo*/
+
+#timer-02{font-size: 3em;
+    background-color: blueviolet;
+    display: inline;
+    margin-left: 0;}/*timer dos cliques*/
+
+.clique{font-size: 3em;
+    margin: 0;
+    margin-right: 25px;}/*texto dos cliques*/
+
+
+.resultado{font-size: 3em;
+    display: inline;
+    margin: 0;}/*config geral do resultado*/
+
+#ganhou{background-color: rgb(9, 223, 9);}
+
+#perdeu{background-color: red;}
